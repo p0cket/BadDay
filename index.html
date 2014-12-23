@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css">
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="first.js"></script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		window.onload = function() {
+			var quotesArray = ["Always remember that you are absolutely unique. Just like everyone else.", "Behind every great man is a woman rolling her eyes.", "Go to Heaven for the climate, Hell for the company."];
+			var randomNum = Math.floor(Math.random() * quotesArray.length);
+			document.getElementById("quoteHead").innerHTML = quotesArray[randomNum];
+		}
+	</script>
+	<div class="nav">
+	 <div class="container">
+	  <ul class="pull-left">
+	  	<li><a href="#">BAD DAY</a></li>
+	  </ul>
+	  <ul class="pull-right">
+	  	<li><a href="#">ABOUT US</a></li>
+	  </ul>
+	 </div>
+	</div>
+
+	<div class="topContent">
+	 <div class="container">
+	  <div class="jumbotron">
+	  <h1>Dear HUMAN</h1>
+	   <h2>It seems like today sucks. Lets fix that.</h2>
+	    <div class="bigYoutube vertical-center">
+		<iframe width="700" height="500" src="//www.youtube.com/embed/s3Q80mk7bxE" frameborder="0" allowfullscreen></iframe>
+		</div>
+	  </div>
+	 </div>
+	</div>
+
+	<div class="videoRow">
+	 <div class="container">
+	 <div class="jumbotron">
+	 <h2>Maybe these videos are more your speed.</h2>
+	  <div class="row">
+	   <div class="col-md-4">
+	   	<h3>Funny</h3>
+	   		<iframe width="320" height="240" src="//www.youtube.com/embed/mzweROP3ux4" frameborder="0" allowfullscreen></iframe>
+	   </div>
+	   <div class="col-md-4">
+	   	<h3>Cute</h3>
+	   	    <iframe width="320" height="240" src="//www.youtube.com/embed/jlYKZmTvzi0" frameborder="0" allowfullscreen></iframe>
+	   </div>
+	   <div class="col-md-4">
+	   	<h3>Motivational</h3>
+	   		<iframe width="320" height="240" src="//www.youtube.com/embed/rmkIcR7AvqQ" frameborder="0" allowfullscreen></iframe>
+	  </div>
+	 </div>
+	 </div>
+	</div>
+
+	<div class="thirdContent">
+	 <div class="container">
+	  <div class="jumbotron">
+	  <h2> Maybe a quote can lift your mood. </h2>
+	  <h3 id="quoteHead"></h3>
+	  </div>
+	 </div>
+	</div>
+
+	<div class="fourthContent">
+	 <div class="container">
+	 <div class="jumbotron">
+	 <h2>The world is telling you to CHEER UP!</h2>
+	 <a class="twitter-timeline" href="https://twitter.com/search?q=%22Cheer%20up%22%20%3A%29" data-widget-id="547422061656670208">Tweets about "Cheer up" :)</a>
+     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <h2>Not Helping? Send in the cats.</h2>
+     </div>
+
+ 	 </div>
+    </div>
+
+</body>
+</html>
